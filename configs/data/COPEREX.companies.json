@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "67c66d9c3a8a9cc952847b9b"
+  },
+  "name": "coca-cola",
+  "phone": "32325656",
+  "address": "Zona 7",
+  "levelOfimpact": "alto",
+  "yearsOfExperience": 3,
+  "category": "Bebidas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T03:03:56.644Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T03:03:56.644Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c670e63a8a9cc952847ba1"
+  },
+  "name": "steren",
+  "phone": "55559999",
+  "address": "Zona 18",
+  "levelOfimpact": "medio",
+  "yearsOfExperience": 5,
+  "category": "Tecnología",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T03:17:58.793Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T03:17:58.793Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c6711b3a8a9cc952847ba4"
+  },
+  "name": "max",
+  "phone": "56534774",
+  "address": "Zona 10",
+  "levelOfimpact": "alto",
+  "yearsOfExperience": 7,
+  "category": "Tecnología",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T03:18:51.650Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T03:18:51.650Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c671443a8a9cc952847ba7"
+  },
+  "name": "samsung",
+  "phone": "99335544",
+  "address": "Zona 16",
+  "levelOfimpact": "alto",
+  "yearsOfExperience": 5,
+  "category": "Tecnología",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T03:19:32.728Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T03:19:32.728Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c67ead3a8a9cc952847bba"
+  },
+  "name": "zelenza",
+  "phone": "6633368899",
+  "address": "Zona 17",
+  "levelOfimpact": "medio",
+  "yearsOfExperience": 6,
+  "category": "Tecnología",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T04:16:45.229Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T04:16:45.229Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c67eef3a8a9cc952847bbd"
+  },
+  "name": "applebee's",
+  "phone": "55559999",
+  "address": "Zona 20",
+  "levelOfimpact": "medio",
+  "yearsOfExperience": 10,
+  "category": "Comida",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T04:17:51.063Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T04:17:51.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c682ab0dd4350c9681b974"
+  },
+  "name": "apple",
+  "phone": "32325654",
+  "address": "Zona 16",
+  "levelOfimpact": "alto",
+  "yearsOfExperience": 10,
+  "category": "tecnología",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T04:33:47.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T04:33:47.706Z"
+  }
+}]
