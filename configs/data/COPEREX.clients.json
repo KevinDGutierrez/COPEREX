@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "67c710143b4d3427b0bd87d8"
+  },
+  "name": "jose",
+  "surname": "Cortez",
+  "email": "jcortez@gmail.com",
+  "phone": "55559999",
+  "address": "Zona 12",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T14:37:08.332Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T14:37:08.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7106d3b4d3427b0bd87db"
+  },
+  "name": "ian",
+  "surname": "Pantuj",
+  "email": "ipantuj@gmail.com",
+  "phone": "45653585",
+  "address": "Zona 18 el limon ",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T14:38:37.004Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T14:38:37.004Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c710dd3b4d3427b0bd87de"
+  },
+  "name": "valentin",
+  "surname": "Mayen",
+  "email": "valentin@gmail.com",
+  "phone": "50506060",
+  "address": "Zona 11",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T14:40:29.611Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T14:45:11.870Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7113d3b4d3427b0bd87e1"
+  },
+  "name": "pablo",
+  "surname": "Castillo",
+  "email": "pcastillo@gmail.com",
+  "phone": "30304646",
+  "address": "Zona 8",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T14:42:05.769Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T14:42:05.769Z"
+  }
+}]
