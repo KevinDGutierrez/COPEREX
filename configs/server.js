@@ -5,6 +5,11 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import { dbConnection } from './mongo.js';
+import adminRoutes from '../src/administrators/administrator.routes.js';
+import { createAdmin } from '../src/administrators/administrator.controller.js';
+import companyRoutes from '../src/companies/companies.routes.js';
+import clientRoutes from '../src/clients/client.route.js';
+
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -15,15 +20,18 @@ const middlewares = (app) => {
 }
 
 const routes = (app) => {
-
+    app.use('/COPEREX/v1/admins', adminRoutes)
+    app.use('/COPEREX/v1/companies', companyRoutes)
+    app.use('/COPEREX/v1/clients', clientRoutes)
 };
 
 const conectarDB = async () => {
     try {
         await dbConnection();
-        console.log('¡¡Conexión a la base de datos exitosa!!');
+        console.log('Database connection successful!!');
+        await createAdmin();
     } catch (error) {
-        console.error('Error al conectar a la base de datos:', error);
+        console.error('Error connecting to database:', error);
         process.exit(1);
     }
 }

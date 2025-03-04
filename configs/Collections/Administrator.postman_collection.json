@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "8b27bc44-7228-4254-8ebc-68d971d2e4f2",
+		"name": "Administrator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42402387"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Kevin\",\r\n    \"surname\": \"Gutierrez\",\r\n    \"username\": \"Kevin\",\r\n    \"email\": \"kgutierrez@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"phone\": \"33332222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/admins/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"admins",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"kevin161@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/admins/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"admins",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateAdmin",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1YmQ4Mjg1NzdhYmM3OTllNzgzYmMiLCJpYXQiOjE3NDEwMTM1MzYsImV4cCI6MTc0MTAxNzEzNn0.D4yYjpN_5gQBkGbQqABWcG4kmv1Pf-UXRgfv-Ld-qLM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Kevin\",\r\n    \"surname\": \"Rodriguez\",\r\n    \"username\": \"kevin\",\r\n    \"email\": \"kgutierrez@gmail.com\",\r\n    \"actualpassword\":\"12345678\",\r\n    \"password\": \"12345678\",\r\n    \"phone\": \"22225550\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/admins/67c5bd828577abc799e783bc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"admins",
+						"67c5bd828577abc799e783bc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

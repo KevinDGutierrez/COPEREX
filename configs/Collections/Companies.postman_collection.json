@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "616ae893-5a23-4358-82e8-72bddcf7ea79",
+		"name": "Companies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42402387"
+	},
+	"item": [
+		{
+			"name": "addCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NTU0OTRjMDMxNzY2ZmY4N2VhMDAiLCJpYXQiOjE3NDEwNTczOTIsImV4cCI6MTc0MTA2MDk5Mn0.Wtyv4G17n7iLXPDwSdQCqBC4xWiBSljDmM0yXzcjpLg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Steren\",\r\n    \"phone\": \"55559999\",\r\n    \"address\": \"Zona 18\",\r\n    \"levelOfimpact\": \"medio\",\r\n    \"yearsOfExperience\": 5,\r\n    \"category\": \"Tecnología\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/companies/addCompany",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"companies",
+						"addCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Pollito Campero\",\r\n    \"phone\": \"55556363\",\r\n    \"address\": \"Zona 11\",\r\n    \"levelOfimpact\": \"medio\",\r\n    \"yearsOfExperience\": 7,\r\n    \"category\": \"Comida\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/companies/67c5e8fbe2b3ff941ac16422",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"companies",
+						"67c5e8fbe2b3ff941ac16422"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarnormal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NTU0OTRjMDMxNzY2ZmY4N2VhMDAiLCJpYXQiOjE3NDEwNjQ0MTMsImV4cCI6MTc0MTA2ODAxM30.OjWAq-_jhQMp075b7pdcoDE34xM_1pJzl686H9thRvs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/companies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lisAñosExp",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NTU0OTRjMDMxNzY2ZmY4N2VhMDAiLCJpYXQiOjE3NDEwNjQ0MTMsImV4cCI6MTc0MTA2ODAxM30.OjWAq-_jhQMp075b7pdcoDE34xM_1pJzl686H9thRvs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/companies/?yearsOfExperience=7\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"companies",
+						""
+					],
+					"query": [
+						{
+							"key": "yearsOfExperience",
+							"value": "7\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listA-Z",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NTU0OTRjMDMxNzY2ZmY4N2VhMDAiLCJpYXQiOjE3NDEwNjQ0MTMsImV4cCI6MTc0MTA2ODAxM30.OjWAq-_jhQMp075b7pdcoDE34xM_1pJzl686H9thRvs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/companies/?orden=A-Z\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"companies",
+						""
+					],
+					"query": [
+						{
+							"key": "orden",
+							"value": "A-Z\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listcategory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NTU0OTRjMDMxNzY2ZmY4N2VhMDAiLCJpYXQiOjE3NDEwNjQ0MTMsImV4cCI6MTc0MTA2ODAxM30.OjWAq-_jhQMp075b7pdcoDE34xM_1pJzl686H9thRvs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/companies/?category=tecnología\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"companies",
+						""
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "tecnología\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listZ-A",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NTU0OTRjMDMxNzY2ZmY4N2VhMDAiLCJpYXQiOjE3NDEwNjQ0MTMsImV4cCI6MTc0MTA2ODAxM30.OjWAq-_jhQMp075b7pdcoDE34xM_1pJzl686H9thRvs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/companies/?orden=Z-A\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"companies",
+						""
+					],
+					"query": [
+						{
+							"key": "orden",
+							"value": "Z-A\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generateExcel",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NTU0OTRjMDMxNzY2ZmY4N2VhMDAiLCJpYXQiOjE3NDEwNjc3MDUsImV4cCI6MTc0MTA3MTMwNX0.udkZgivf4KKXp_I6epx8PE663_Y7GFibwU58JmWMZGQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/companies/generateExcelReport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"companies",
+						"generateExcelReport"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
