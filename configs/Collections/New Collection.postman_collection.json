@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "f2007521-2196-4f4f-9bf0-8f13117763cb",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42402387"
+	},
+	"item": [
+		{
+			"name": "addclient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3MDI5YWI2OTI0NmY2MGFjZjAyM2YiLCJpYXQiOjE3NDEwOTgxMzcsImV4cCI6MTc0MTEwMTczN30.k_-G7L3bB2iC1HSBkZFbXTu-i7DiJx4e8Z3gybxitqI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jose\",\r\n    \"surname\": \"Cortez\",\r\n    \"email\": \"Jcortez@gmail.com\",\r\n    \"phone\": \"55559999\",\r\n    \"address\": \"Zona 12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/clients/addClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"clients",
+						"addClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateClient",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3MDI5YWI2OTI0NmY2MGFjZjAyM2YiLCJpYXQiOjE3NDEwOTgxMzcsImV4cCI6MTc0MTEwMTczN30.k_-G7L3bB2iC1HSBkZFbXTu-i7DiJx4e8Z3gybxitqI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Valentin\",\r\n    \"surname\": \"Mayen\",\r\n    \"email\": \"Valentin@gmail.com\",\r\n    \"phone\": \"50506060\",\r\n    \"address\": \"Zona 11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/COPEREX/v1/clients/67c710dd3b4d3427b0bd87de",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"COPEREX",
+						"v1",
+						"clients",
+						"67c710dd3b4d3427b0bd87de"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
